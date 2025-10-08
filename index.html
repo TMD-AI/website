@@ -1,1 +1,296 @@
-360 TMD AI website -- test ...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360° Chat-TMD | AI in TMD Research</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        :root {
+            --primary-color: #0d47a1; /* Deep Blue */
+            --secondary-color: #1565c0; /* Lighter Blue */
+            --accent-color: #42a5f5; /* Accent Blue */
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --header-text: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: var(--header-text);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: var(--header-text);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            background-color: var(--secondary-color);
+            color: var(--header-text);
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--header-text);
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1.5rem;
+            font-weight: 700;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background: #1e88e5;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        #about-tmd {
+            background-color: var(--card-bg);
+        }
+
+        .about-content {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .about-text {
+             flex: 2;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: var(--header-text);
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 1rem;
+                padding: 0;
+            }
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+            .about-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>360° Chat-TMD</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about-tmd">About</a></li>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#projects">Research</a></li>
+                    <li><a href="#contact">Learn More</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Revolutionizing Temporomandibular Disorder Research with AI</h2>
+        [cite_start]<p>The 360° Collaborative Hub for AI in TMD Research (360° Chat-TMD) is a national, patient-centered initiative creating robust models to establish new clinical standards for TMD care based on risk, severity, and comorbid conditions[cite: 75, 123].</p>
+        <a href="https://tmd.statisticalcomputing.org/" target="_blank" class="btn">Explore Our Full Research Site</a>
+    </section>
+
+    <section id="about-tmd">
+        <div class="container">
+            <h2 class="section-title">What is TMD?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    [cite_start]<p>Temporomandibular disorders (TMD) are a significant public health problem, affecting up to 10% of the population with pain and compromised joint function[cite: 2]. [cite_start]As the second most prevalent musculoskeletal condition after chronic low back pain, TMD incurs an estimated annual societal cost of $4 billion[cite: 125].</p>
+                    <br>
+                    [cite_start]<p>The complexity of TMD, its often subjective symptoms, and its overlap with other chronic pain conditions call for an interdisciplinary, whole-person approach to improve diagnosis and develop effective, evidence-based therapies[cite: 3, 5, 6]. [cite_start]Our center was established to bridge critical knowledge gaps and translate research discoveries into clinical practice[cite: 4, 78].</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://tmd.statisticalcomputing.org/wp-content/uploads/2024/09/360-TMD-Impact-Center-Figure-1-Light-Bkg-1.png" alt="360 Chat-TMD Diagram">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="mission">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Integrate Sciences</h3>
+                    [cite_start]<p>Drive discovery and innovation by integrating life sciences, engineering, AI, and health technologies to solve clinically-defined problems[cite: 156].</p>
+                </div>
+                <div class="card">
+                    <h3>Understand Determinants</h3>
+                    [cite_start]<p>Conduct comprehensive research on the multifaceted biological, behavioral, and environmental determinants of TMD to foster a deeper understanding of effective treatments[cite: 159].</p>
+                </div>
+                <div class="card">
+                    <h3>Develop Novel Tools</h3>
+                    [cite_start]<p>Pioneer new diagnostic tools and therapeutic interventions by leveraging cutting-edge technology, Gen AI modeling, and insights from our research[cite: 160].</p>
+                </div>
+                 <div class="card">
+                    <h3>Enhance Research Capacity</h3>
+                    [cite_start]<p>Bolster the field of TMD research through rigorous training and workforce development, ensuring a robust pipeline of skilled professionals[cite: 161].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" style="background-color: var(--card-bg);">
+        <div class="container">
+            <h2 class="section-title">Core Research Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Project 1: A Multi-Level Approach</h3>
+                    <p>This project aims to understand the mechanisms of TMJ Osteoarthritis and associated pain using a multi-level approach in animal models. [cite_start]The goal is to develop more effective, evidence-based treatments that can promote tissue regeneration, reduce pain, and restore function[cite: 99, 254, 259].</p>
+                </div>
+                <div class="card">
+                    <h3>Project 2: 360° Whole-Person Research</h3>
+                    <p>This project develops and validates robust mechanistic and clinical models for classifying and predicting TMD. [cite_start]It uses advanced AI/ML, deep-phenotyping, and patient data to enable precision medicine and create clinically actionable tools for personalized TMD management[cite: 15, 107, 266].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Partners & Further Information</h2>
+            [cite_start]<p>Our center is a proud partnership between leading institutions including the <strong>University of Michigan, Harvard University, and Mass General Brigham</strong>, alongside dedicated patient communities[cite: 77]. We are leveraging our collective expertise to address the challenges of TMD head-on.</p>
+            <p style="margin-top: 1rem;">For detailed information about our specific research, publications, team, and ongoing initiatives, please visit our main research portal.</p>
+            <a href="https://tmd.statisticalcomputing.org/" target="_blank" class="btn">Visit Our Main Website</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024-2025 | 360° Collaborative Hub for AI in TMD Research (360° Chat-TMD)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
