@@ -1,2 +1,2 @@
 # website
-MTMD-AI website
+TMD-AI website
