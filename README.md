@@ -12,7 +12,7 @@ Table of contents
    * [Resources](#resources)
        1. [TMD Simulator](#tmd-simulator)
        2. [TMD Events](#tmd-events)
-       3. [Audio podcast about decoding chronic jaw pain using the synthetic TMD data resource (mp4)](./img_video/Decoding_Chronic_Jaw_Pain_The_Synthetic_Data_Resource_Mapping_short.mp4)
+       3. [TMD AI Podcast](#tmd-ai-podcast)
    * [CDE](#cde)
 <!--te-->
 
@@ -41,6 +41,8 @@ Resources
 
 # [TMD Events](https://tmd.statisticalcomputing.org/)
 
+# [TMD AI Podcast]
+[Audio podcast about decoding chronic jaw pain using the synthetic TMD data resource (mp4)](https://github.com/TMD-AI/website/blob/main/img_video/Decoding_Chronic_Jaw_Pain_The_Synthetic_Data_Resource_Mapping_short.mp4?raw=true)
 
 CDE
 ===
