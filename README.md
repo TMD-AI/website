@@ -12,6 +12,7 @@ Table of contents
    * [Resources](#resources)
        1. [TMD Simulator](#tmd-simulator)
        2. [TMD Events](#tmd-events)
+   * [CDE](#cde)
 <!--te-->
 
 Overview
@@ -32,6 +33,12 @@ Goals
 
     (3) Refine the AI/ML models based on validation results and integrate them with salivary biomarker data to create clinically actionable tools for personalized TMD management.
 
+CDE
+===
+
+    Common data elements (CDE) used in TMD-AI research are show in the graph velow.
+    https://github.com/TMD-AI/website/blob/e5701d6a589036bee35e70b7c3b0e474f02dcd35/img_video/TMD_Mind%20Map.png
+    <a href="[https://www.statsinimaging.org/](https://tmd.statisticalcomputing.org/)"><img align="middle" width="600" src="https://github.com/TMD-AI/website/blob/img_video/TMD_Mind%20Map.png?raw=true"></a>
 
 
 Resources
@@ -39,5 +46,5 @@ Resources
 
 # [TMD Simulator](https://tmd.statisticalcomputing.org/)
 
-# [TMD Events]([https://www.statsinimaging.org/events_smi/](https://tmd.statisticalcomputing.org/))
+# [TMD Events](https://tmd.statisticalcomputing.org/)
 
