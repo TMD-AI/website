@@ -1,6 +1,6 @@
 # Temporomandibular Disorder Airtificial Intelligence (TMD-AI) Resourceome
 
-<a href="https://tmd.statisticalcomputing.org/)"><img align="middle" width="600" src="https://github.com/TMD-AI/website/blob/main/img_video/TMD_Mind%20Map.png?raw=true"></a>
+<a href="https://tmd.statisticalcomputing.org/)"><img align="middle" width="600" src="https://github.com/TMD-AI/website/blob/main/img_video/TMD_Form.png?raw=true"></a>
 
 Table of contents
 =================
