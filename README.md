@@ -1,6 +1,7 @@
 # Temporomandibular Disorder Airtificial Intelligence (TMD-AI) Resourceome
 
 <a href="https://www.statsinimaging.org/"><img align="right" width="400" src="https://github.com/ASA-SII/website/blob/main/images/AmStat_SiI_Logo.png?raw=true"></a>
+<a href="https://www.statsinimaging.org/](https://tmd.statisticalcomputing.org/)"><img align="middle" width="600" src="https://github.com/TMD-AI/website/blob/img_video/TMD_Mind%20Map.png?raw=true"></a>
 
 Table of contents
 =================
@@ -38,7 +39,7 @@ CDE
 
     Common data elements (CDE) used in TMD-AI research are show in the graph velow.
     https://github.com/TMD-AI/website/blob/e5701d6a589036bee35e70b7c3b0e474f02dcd35/img_video/TMD_Mind%20Map.png
-    <a href="[https://www.statsinimaging.org/](https://tmd.statisticalcomputing.org/)"><img align="middle" width="600" src="https://github.com/TMD-AI/website/blob/img_video/TMD_Mind%20Map.png?raw=true"></a>
+    <a href="https://www.statsinimaging.org/](https://tmd.statisticalcomputing.org/)"><img align="middle" width="600" src="https://github.com/TMD-AI/website/blob/img_video/TMD_Mind%20Map.png?raw=true"></a>
 
 
 Resources
