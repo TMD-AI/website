@@ -41,7 +41,7 @@ Resources
 
 # [TMD Events](https://tmd.statisticalcomputing.org/)
 
-# [TMD AI Podcast]
+# TMD AI Podcast
 [Audio podcast about decoding chronic jaw pain using the synthetic TMD data resource (mp4)](https://github.com/TMD-AI/website/blob/main/img_video/Decoding_Chronic_Jaw_Pain_The_Synthetic_Data_Resource_Mapping_short.mp4)
 
 CDE
