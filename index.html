@@ -28,6 +28,7 @@
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--bg-color);
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
         .container {
@@ -50,20 +51,30 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         header h1 {
             font-size: 1.5rem;
             font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-logo {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
         }
 
         nav ul {
             list-style: none;
             display: flex;
+            flex-wrap: wrap;
         }
 
         nav ul li {
-            margin-left: 20px;
+            margin-left: 15px;
         }
 
         nav a {
@@ -71,6 +82,7 @@
             text-decoration: none;
             font-weight: 700;
             transition: color 0.3s;
+            font-size: 0.9rem;
         }
 
         nav a:hover {
@@ -81,20 +93,22 @@
             background-color: var(--secondary-color);
             color: var(--header-text);
             text-align: center;
-            padding: 4rem 1rem;
+            padding: 3rem 1rem;
         }
 
         .hero h2 {
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             margin-bottom: 1rem;
             font-weight: 700;
+            line-height: 1.2;
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             max-width: 800px;
             margin: 0 auto;
             font-weight: 300;
+            line-height: 1.5;
         }
 
         .btn {
@@ -107,6 +121,7 @@
             margin-top: 1.5rem;
             font-weight: 700;
             transition: background-color 0.3s;
+            white-space: nowrap;
         }
 
         .btn:hover {
@@ -114,25 +129,26 @@
         }
 
         section {
-            padding: 4rem 0;
+            padding: 3rem 0;
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
+            font-size: 2rem;
+            margin-bottom: 2rem;
             color: var(--primary-color);
+            line-height: 1.2;
         }
 
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         .card {
             background: var(--card-bg);
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             transition: transform 0.3s, box-shadow 0.3s;
@@ -144,9 +160,10 @@
         }
 
         .card h3 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: var(--secondary-color);
             margin-bottom: 1rem;
+            line-height: 1.3;
         }
 
         #about-tmd {
@@ -181,20 +198,116 @@
             padding: 2rem 0;
         }
         
+        /* Button container for better mobile layout */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             header .container {
                 flex-direction: column;
+                text-align: center;
             }
+            
+            header h1 {
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+            }
+            
             nav ul {
-                margin-top: 1rem;
+                margin-top: 0.5rem;
                 padding: 0;
+                justify-content: center;
             }
+            
+            nav ul li {
+                margin: 0 8px 5px 8px;
+            }
+            
+            nav a {
+                font-size: 0.85rem;
+            }
+            
+            .hero {
+                padding: 2.5rem 1rem;
+            }
+            
             .hero h2 {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
             }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
             .about-content {
                 flex-direction: column;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .card {
+                padding: 1.2rem;
+            }
+            
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 280px;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            header h1 {
+                font-size: 1.1rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+            
+            .hero p {
+                font-size: 0.95rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .card h3 {
+                font-size: 1.2rem;
+            }
+            
+            section {
+                padding: 2rem 0;
+            }
+            
+            nav a {
+                font-size: 0.8rem;
+            }
+            
+            nav ul li {
+                margin: 0 5px 5px 5px;
             }
         }
     </style>
@@ -204,7 +317,7 @@
     <header>
         <div class="container">
             <h1>
-                <img src="./img_video/360_TMD.png" alt="360° Chat-TMD Logo" class="nav-logo" style="height: 40px; width: auto;"> 360° Chat-TMD
+                <img src="./img_video/360_TMD.png" alt="360° Chat-TMD Logo" class="nav-logo"> 360° Chat-TMD
             </h1>
             <nav>
                 <ul>
@@ -358,7 +471,7 @@
             </div>
             <div class="about-image">
                 <a href="https://tmd.statisticalcomputing.org/">
-                    <img src="./img_video/TMD_Simulator.png" alt="360 Chat-TMD Diagram" style="height: 300px; width: auto;"></a>
+                    <img src="./img_video/TMD_Simulator.png" alt="360 Chat-TMD Diagram" style="max-width: 100%; height: auto;"></a>
             </div>
         </div>
     </section>
@@ -395,12 +508,12 @@
             <h2 class="section-title">Partners & Further Information</h2>
             <p>Our center is a proud partnership between leading institutions including the <strong>University of Michigan, Harvard University, and Mass General Brigham</strong>, alongside dedicated patient communities. We are leveraging our collective expertise to address the challenges of TMD head-on.</p>
             <p style="margin-top: 1rem;">For detailed information about our specific research, publications, team, and ongoing initiatives, please visit the 360 TMD Websites.</p>
-            <p> <a href="https://TMD-AI.ai" target="_blank" class="btn">360 TMD Center Website</a>  
-                <a href="https://tmd.statisticalcomputing.org/" target="_blank" class="btn">TMD-Simulator (Webapp)</a> 
-            </p>
-            <p> <a href="https://github.com/TMD-AI/website" target="_blank" class="btn">TMD-AI GitHub</a>  
+            <div class="button-container">
+                <a href="https://TMD-AI.ai" target="_blank" class="btn">360 TMD Center Website</a>  
+                <a href="https://tmd.statisticalcomputing.org/" target="_blank" class="btn">TMD-Simulator (Webapp)</a>
+                <a href="https://github.com/TMD-AI/website" target="_blank" class="btn">TMD-AI GitHub</a>  
                 <a href="https://forms.gle/6h5B7nyTSzX9mdLi7" target="_blank" class="btn">360 TMD Contact (Webform)</a>
-            </p>
+            </div>
         </div>
     </section>
 
